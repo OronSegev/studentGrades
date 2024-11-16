@@ -1,0 +1,22 @@
+<div class="filter-container">
+	<app-charts-filter
+		[ids]="idsList()"
+		[subjects]="subjectsList()"
+		(idsChange)="idsChanged($event)"
+		(subjectsChange)="subjectsChanged($event)"
+	></app-charts-filter>
+</div>
+<div class="charts-container">
+	<div cdkDropList id="chart1" class="chart">
+		<app-chart-avg-id [dataSource]="studentsGradesWithFilter()"></app-chart-avg-id>
+	</div>
+	<div cdkDropList id="chart2" class="chart">
+		<app-chart-avg-student [dataSource]="studentsGradesWithFilter()"></app-chart-avg-student>
+	</div>
+	<!-- <div cdkDropList id="chart3" class="chart">
+		<app-chart-avg-subject [dataSource]="studentsGradesWithFilter()"></app-chart-avg-subject>
+	</div> -->
+</div>
+<div class="chart-button-container">
+	<button mat-flat-button>Drag me to swap chart position</button>
+</div>

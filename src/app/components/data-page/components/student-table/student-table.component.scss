@@ -1,0 +1,15 @@
+/* student-table-form.component.css */
+.container {
+	display: flex;
+	align-items: stretch; /* Ensures both table and form are of equal height */
+	height: 100%;
+}
+
+.table-container {
+	flex: 3; /* Table takes 3 parts of the total space */
+	margin-right: 20px; /* Space between table and form */
+}
+
+.form-container {
+	flex: 1; /* Form takes 1 part of the total space */
+}

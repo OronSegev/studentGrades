@@ -1,0 +1,28 @@
+<div class="filter-container">
+	<!-- Filter Input Field -->
+	<mat-form-field class="filter-input" appearance="outline">
+		<mat-label>Filter</mat-label>
+		<input matInput placeholder="Enter filter criteria" [ngModel]="studentGradesfilter()" (ngModelChange)="filterChanged($event)" />
+	</mat-form-field>
+
+	<!-- Add and Remove Buttons -->
+	<div class="mat-form-field-wrapper">
+		<button mat-raised-button color="primary" (click)="addNewRow()">Add</button>
+		<button mat-raised-button color="warn" (click)="deleteSelectedRow()">Remove</button>
+		<!-- small hack to fix btns vertical alignment -->
+		<div class="mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align">
+			<!--container-->
+			<div
+				class="mat-mdc-form-field-hint-wrapper ng-trigger ng-trigger-transitionMessages"
+				style="opacity: 1; transform: translateY(0%)"
+			>
+				<!--container-->
+				<div class="mat-mdc-form-field-hint-spacer"></div>
+			</div>
+			<!--container-->
+		</div>
+	</div>
+</div>
+<div class="table-container">
+	<app-student-table [studentsGrades]="studentsGradesWithFilter()" [selectedStudent]="selectedStudent()" (saveStudent)="saveStudent($event)" (selectedStudentChanged)="selectedStudentChanged($event)"></app-student-table>
+</div>

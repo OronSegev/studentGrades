@@ -1,0 +1,14 @@
+
+:host {
+	margin: 30px;
+}
+
+.filter-container {
+	display: flex;
+	align-items: center;
+	gap: 16px; /* Adds space between filter input and buttons */
+}
+
+.filter-input {
+	flex: 1; /* Makes the filter input take up most of the width */
+}
