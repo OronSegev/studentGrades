@@ -7,6 +7,7 @@ import { MonitorPageComponent } from './components/monitor-page/monitor-page.com
 
 @Component({
     selector: 'app-root',
+    standalone: true,
     imports: [RouterOutlet, MatTabsModule, MonitorPageComponent, AnalysisPageComponent, DataPageComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
