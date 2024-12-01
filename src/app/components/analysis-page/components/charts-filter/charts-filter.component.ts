@@ -5,6 +5,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 @Component({
     selector: 'app-charts-filter',
+    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule],
     templateUrl: './charts-filter.component.html',
     styleUrl: './charts-filter.component.scss'

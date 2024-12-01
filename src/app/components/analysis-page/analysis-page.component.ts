@@ -9,6 +9,7 @@ import { AnalysisPageService } from './services/analysis-page.service';
 
 @Component({
     selector: 'app-analysis-page',
+    standalone: true,
     imports: [
         ChartsFilterComponent,
         ChartAvgSubjectComponent,

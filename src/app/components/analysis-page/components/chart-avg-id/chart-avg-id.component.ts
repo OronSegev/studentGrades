@@ -1,12 +1,12 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { MatButton } from '@angular/material/button';
 import { ChartConfiguration, ChartData, ChartEvent } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { Student } from "../../../../_core/models/Student";
 
 @Component({
     selector: 'app-chart-avg-id',
-    imports: [MatButton, BaseChartDirective],
+    standalone: true,
+    imports: [BaseChartDirective],
     templateUrl: './chart-avg-id.component.html',
     styleUrl: './chart-avg-id.component.scss'
 })

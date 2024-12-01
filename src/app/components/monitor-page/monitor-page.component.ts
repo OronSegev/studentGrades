@@ -6,6 +6,7 @@ import { ChartsFilterComponent } from '../analysis-page/components/charts-filter
 
 @Component({
     selector: 'app-monitor-page',
+    standalone: true,
     imports: [ChartsFilterComponent, ChartAvgSubjectComponent, ChartAvgStudentComponent, ChartAvgIdComponent],
     templateUrl: './monitor-page.component.html',
     styleUrl: './monitor-page.component.scss'

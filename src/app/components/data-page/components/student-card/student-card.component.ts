@@ -8,6 +8,7 @@ import { Student } from "../../../../_core/models/Student";
 
 @Component({
     selector: 'app-student-card',
+    standalone: true,
     imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, SimpleCardComponent],
     templateUrl: './student-card.component.html',
     styleUrl: './student-card.component.scss'

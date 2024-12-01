@@ -5,6 +5,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
     selector: 'app-table',
+    standalone: true,
     imports: [MatTableModule, TitleCasePipe, MatPaginatorModule],
     templateUrl: './table.component.html',
     styleUrl: './table.component.scss'
