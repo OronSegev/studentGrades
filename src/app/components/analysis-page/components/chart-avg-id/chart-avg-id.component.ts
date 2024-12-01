@@ -5,11 +5,10 @@ import { BaseChartDirective } from 'ng2-charts';
 import { Student } from "../../../../_core/models/Student";
 
 @Component({
-	selector: 'app-chart-avg-id',
-	standalone: true,
-	imports: [MatButton, BaseChartDirective],
-	templateUrl: './chart-avg-id.component.html',
-	styleUrl: './chart-avg-id.component.scss',
+    selector: 'app-chart-avg-id',
+    imports: [MatButton, BaseChartDirective],
+    templateUrl: './chart-avg-id.component.html',
+    styleUrl: './chart-avg-id.component.scss'
 })
 export class ChartAvgIdComponent {
 	@Input('dataSource') set _dataSource(values: any[]) {

@@ -4,11 +4,10 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
-	selector: 'app-table',
-	standalone: true,
-	imports: [MatTableModule, TitleCasePipe, MatPaginatorModule],
-	templateUrl: './table.component.html',
-	styleUrl: './table.component.scss',
+    selector: 'app-table',
+    imports: [MatTableModule, TitleCasePipe, MatPaginatorModule],
+    templateUrl: './table.component.html',
+    styleUrl: './table.component.scss'
 })
 export class TableComponent implements AfterViewInit {
 	@Input() displayedColumns: string[] = [];

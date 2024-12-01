@@ -8,18 +8,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { AnalysisPageService } from './services/analysis-page.service';
 
 @Component({
-	selector: 'app-analysis-page',
-	standalone: true,
-	imports: [
-		ChartsFilterComponent,
-		ChartAvgSubjectComponent,
-		ChartAvgStudentComponent,
-		ChartAvgIdComponent,
-		MatButtonModule,
-		DragDropModule,
-	],
-	templateUrl: './analysis-page.component.html',
-	styleUrl: './analysis-page.component.scss',
+    selector: 'app-analysis-page',
+    imports: [
+        ChartsFilterComponent,
+        ChartAvgSubjectComponent,
+        ChartAvgStudentComponent,
+        ChartAvgIdComponent,
+        MatButtonModule,
+        DragDropModule,
+    ],
+    templateUrl: './analysis-page.component.html',
+    styleUrl: './analysis-page.component.scss'
 })
 export class AnalysisPageComponent implements OnInit {
 	analysisService = inject(AnalysisPageService);

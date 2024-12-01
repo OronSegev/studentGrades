@@ -6,12 +6,11 @@ import { AnalysisPageComponent } from './components/analysis-page/analysis-page.
 import { MonitorPageComponent } from './components/monitor-page/monitor-page.component';
 
 @Component({
-	selector: 'app-root',
-	standalone: true,
-	imports: [RouterOutlet, MatTabsModule, MonitorPageComponent, AnalysisPageComponent, DataPageComponent],
-	templateUrl: './app.component.html',
-	styleUrl: './app.component.scss',
-	providers: []
+    selector: 'app-root',
+    imports: [RouterOutlet, MatTabsModule, MonitorPageComponent, AnalysisPageComponent, DataPageComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    providers: []
 })
 export class AppComponent {
 	title = 'studentApp';

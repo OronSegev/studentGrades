@@ -5,11 +5,10 @@ import { ChartAvgSubjectComponent } from '../analysis-page/components/chart-avg-
 import { ChartsFilterComponent } from '../analysis-page/components/charts-filter/charts-filter.component';
 
 @Component({
-  selector: 'app-monitor-page',
-  standalone: true,
-  imports: [ChartsFilterComponent, ChartAvgSubjectComponent, ChartAvgStudentComponent, ChartAvgIdComponent],
-  templateUrl: './monitor-page.component.html',
-  styleUrl: './monitor-page.component.scss'
+    selector: 'app-monitor-page',
+    imports: [ChartsFilterComponent, ChartAvgSubjectComponent, ChartAvgStudentComponent, ChartAvgIdComponent],
+    templateUrl: './monitor-page.component.html',
+    styleUrl: './monitor-page.component.scss'
 })
 export class MonitorPageComponent {
 

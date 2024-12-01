@@ -7,11 +7,10 @@ import { SimpleCardComponent } from '../../../../_shared/components/simple-card/
 import { Student } from "../../../../_core/models/Student";
 
 @Component({
-	selector: 'app-student-card',
-	standalone: true,
-	imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, SimpleCardComponent],
-	templateUrl: './student-card.component.html',
-	styleUrl: './student-card.component.scss',
+    selector: 'app-student-card',
+    imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, SimpleCardComponent],
+    templateUrl: './student-card.component.html',
+    styleUrl: './student-card.component.scss'
 })
 export class StudentCardComponent {
 	@Input() set studentInfo(student: Student | null) {

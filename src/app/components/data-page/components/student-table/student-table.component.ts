@@ -4,11 +4,10 @@ import { StudentCardComponent } from '../student-card/student-card.component';
 import { Student } from "../../../../_core/models/Student";
 
 @Component({
-	selector: 'app-student-table',
-	standalone: true,
-	imports: [TableComponent, StudentCardComponent],
-	templateUrl: './student-table.component.html',
-	styleUrl: './student-table.component.scss',
+    selector: 'app-student-table',
+    imports: [TableComponent, StudentCardComponent],
+    templateUrl: './student-table.component.html',
+    styleUrl: './student-table.component.scss'
 })
 export class StudentTableComponent {
 	@Input() studentsGrades: Student[] | undefined = [];
