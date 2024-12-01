@@ -1,27 +1,27 @@
 <app-simple-card [title]="'Details'">
     <ng-content cardContent>
         <form class="details-form" [formGroup]="editForm">
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>ID</mat-label>
                 <input matInput formControlName="id" />
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Name</mat-label>
                 <input matInput formControlName="name" />
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Date</mat-label>
                 <input matInput formControlName="date" />
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Grade</mat-label>
                 <input matInput formControlName="grade" />
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Subject</mat-label>
                 <input matInput formControlName="subject" />
             </mat-form-field>
