@@ -10,13 +10,14 @@ import { FilterHelperService } from './services/filter-helper.service';
 
 @Component({
     selector: 'app-data-page',
+    standalone: true,
     imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, StudentTableComponent, AsyncPipe],
     templateUrl: './data-page.component.html',
     styleUrl: './data-page.component.scss'
 })
 export class DataPageComponent implements OnInit {
 	displayedColumns: string[] = ['id', 'name', 'date', 'grade', 'subject'];
-	
+
 	dataPageService = inject(DataPageService);
 
 	selectedStudent = this.dataPageService.selectedStudent;
