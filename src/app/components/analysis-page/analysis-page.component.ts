@@ -12,7 +12,7 @@ import { AnalysisPageService } from './services/analysis-page.service';
     standalone: true,
     imports: [
         ChartsFilterComponent,
-        ChartAvgSubjectComponent,
+        // ChartAvgSubjectComponent,
         ChartAvgStudentComponent,
         ChartAvgIdComponent,
         MatButtonModule,

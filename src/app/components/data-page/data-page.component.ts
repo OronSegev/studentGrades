@@ -11,7 +11,7 @@ import { FilterHelperService } from './services/filter-helper.service';
 @Component({
     selector: 'app-data-page',
     standalone: true,
-    imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, StudentTableComponent, AsyncPipe],
+    imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, StudentTableComponent],
     templateUrl: './data-page.component.html',
     styleUrl: './data-page.component.scss'
 })

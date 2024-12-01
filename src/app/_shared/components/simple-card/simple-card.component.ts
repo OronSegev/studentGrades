@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { CardContentDirective } from '../../directives/card-content.directive';
 
 @Component({
     selector: 'app-simple-card',
     standalone: true,
-    imports: [MatCardModule, CardContentDirective],
+    imports: [MatCardModule],
     templateUrl: './simple-card.component.html',
     styleUrl: './simple-card.component.scss'
 })
